@@ -5,44 +5,41 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Tale of...</title>
+    <title>User Validation</title>
     <script>
         function strCheck(){
         var fname = document.getElementById("input_fname").value;
         var lname = document.getElementById("input_lname").value; 
-        //the story can be changed to suite the desired story telling.
-        var concName = "this is a tale of epic protions and it is about none other then" + " " + fname + " " + lname + " " + "and the story goes like this...a child that was born" + " " + 
-        document.getElementById("input_age").value + " " + "years ago."; 
-        
-        
+        var concName = "Good Afternoon " + fname + " " + lname;
         document.getElementById("conc_names").innerHTML = concName;
-        //Longer the name the better response and vice versus if too short.
-        if(fname.length + lname.length > 10){
-            alert("Great name, fit for a true warrior. Songs will be sung about you!");
+        
+        
+        if(concName < 20){
+            alert("String is greater than 20 characters");
         }else{
-            alert("That's it? That's what you're going with...okay"); 
+            alert("String is less than 20 characters"); 
         }
-        //Is the character too old or young. Age determines response.
-        var age = document.getElementById("input_age").value;
-        if(document.getElementById("input_age").value < 100)   {
-            alert("You're just a baby, hope you said farewell to the folks.")
+        
+        var zip = document.getElementById("input_zip").value;
+        if(zip.length == 5)   {
+            alert("Zip code is good to go!")
         }
         else{
-            alert("You are old as Hell! I so sorry it is my first time meeting a Relic.")
+            alert("Zip code is not good to go! Re-enter Zipcode!")
         }     
         }
     </script>
 </head>
 <body>
-    <Body background="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\fairy tale.jpg">  
-    <h1>The Myth, the Legend...the Disappoint</h1><br />
+    <Body background="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Street Map.jpeg">  
+    <h1>Verifying Your Information</h1><br />
     <p id="conc_names"></p><br />
 
 
 
- <label id="fname">What will your title be?</label>&nbsp;&nbsp;<input id="input_fname" type="text" style="width:100px" /><br />
- <label id="lname">What is the name bestowed upon you?</label>&nbsp;&nbsp;<input id="input_lname" type="text" style="width:100px" /><br />
- <label id="age_label">How long have you lived?</label>&nbsp;&nbsp;<input id="input_age" type="text" style="width:45px" /><br />
- <button id="run_code_btn" onclick="strCheck()">What is your story?</button><br />
+ <label id="fname">First Name:</label>&nbsp;&nbsp;<input id="input_fname" type="text" style="width:100px" /><br />
+ <label id="lname">Last Name:</label>&nbsp;&nbsp;<input id="input_lname" type="text" style="width:100px" /><br />
+ <label id="zip">Please enter Zip Code:</label>&nbsp;&nbsp;<input id="input_zip" type="text" style="width:45px" /><br />
+ <button id="run_code_btn" onclick="strCheck()">Verify Information</button><br />
 </body>
 </html>
