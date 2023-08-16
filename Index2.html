@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHICH WAY DID IT GO</title>
+    <h1 style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Taking a Small Trip</h1>
+<style>   
+        div {
+            animation: infinite;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: toothy;
+            animation-duration: 60s;
+            animation-play-state: paused;
+        }
+
+    @keyframes toothy {
+        0% {image: "C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Toothy2.jpg"; left:0px; top:0px;}
+        25% {image: "C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Toothy2.jpg"; left:300px; top:0px;}
+        50% {image: "C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Toothy2.jpg"; left:300px; top:300px;}
+        75% {image: "C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Toothy2.jpg"; left:0px; top:300px;}
+        100% {image: "C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Toothy2.jpg"; left:0px; top:0px;}
+    }
+
+</style>
+
+   
+
+</head>
+
+
+
+<body style="background-color: green;">
+
+    <button id="start_demo" onclick= "startDemo()" style="height:100px; width:100px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border-radius: 75px; background-color: blueviolet;">Start</button> 
+    <button id="stop_demo" onclick="stopDemo()"  style="height:100px; width:100px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border-radius: 75px; background-color: blueviolet;">Stop</button>
+
+<script>
+    function startDemo() {
+        document.getElementById("toothy").style.animationPlayState = "running";
+    }
+    function stopDemo() {
+        document.getElementById("toothy").style.animationPlayState = "paused"
+    }
+</script>
+
+
+
+<div id="toothy">
+    <img src= "C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Toothy2.jpg" style="height: 200px; width: 200px; padding-top: 200px; padding-bottom: 200px;padding-left: 600px;padding-right: 200px;" /> 
+</div>
+    
+   
+
+
+</body>
+</html>
