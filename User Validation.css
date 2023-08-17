@@ -1,0 +1,33 @@
+h1{
+    color:Black;
+    font-style: oblique;
+    font-weight: bolder;
+    text-align: center;
+}
+#fname{
+    color:Black;
+    font-style: oblique;
+    font-size: x-large;
+
+}
+#lname{
+    color:black;
+    font-style: oblique;
+    font-size: x-large;
+}
+#zip{
+    color:black;
+    font-style: oblique;
+    font-size: x-large;
+}
+body{
+    font-style: oblique;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+button{
+    margin-left: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+}

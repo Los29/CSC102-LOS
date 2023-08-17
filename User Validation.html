@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--This is insertion of an audio file into the week 3 webpage-->
+<head>
+    <link rel="stylesheet" href="User Validation.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Validation</title>
+    <script>
+        function strCheck(){
+        var fname = document.getElementById("input_fname").value;
+        var lname = document.getElementById("input_lname").value; 
+        var concName = "Good Afternoon " + fname + " " + lname;
+        document.getElementById("conc_names").innerHTML = concName;
+        
+        
+        if(concName < 20){
+            alert("String is greater than 20 characters");
+        }else{
+            alert("String is less than 20 characters"); 
+        }
+        
+        var zip = document.getElementById("input_zip").value;
+        if(zip.length == 5)   {
+            alert("Zip code is good to go!")
+        }
+        else{
+            alert("Zip code is not good to go! Re-enter Zipcode!")
+        }     
+        }
+    </script>
+    <style>
+        #subie{
+            border-radius: 25px;
+            width: 500px;
+            height: 500px;
+                      
+            
+        }
+        #cayman{
+            border-radius: 25px;
+            width: 500px;
+            height: 500px;
+            
+
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <Body background="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Street Map.jpeg">  
+    <h1>Verifying Your Information</h1><br />
+    <p id="conc_names"></p><br />
+
+
+
+ <label id="fname">First Name:</label>&nbsp;&nbsp;<input id="input_fname" type="text" style="width:100px" /><br />
+ <label id="lname">Last Name:</label>&nbsp;&nbsp;<input id="input_lname" type="text" style="width:100px" /><br />
+ <label id="zip">Please enter Zip Code:</label>&nbsp;&nbsp;<input id="input_zip" type="text" style="width:45px" /><br />
+ <button id="run_code_btn" onclick="strCheck()">Verify Information</button><br />
+ <br />
+ <br />
+ <br />
+ <!--I'm a car guy-->
+ <audio controls>
+    <source src="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Race Cars Formula 12 Cars - QuickSounds.com.mp3" type="audio/mpeg">
+</audio><br>
+ <!--dream build, unless I win the lotto and its a cayman 718 for me!-->
+ <img id="subie" src="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\rally car.jpg"/>
+ <img id="cayman" src="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\718.jpg"/>
+ <br>
+ 
+  
+  
+</body>
+</html>
