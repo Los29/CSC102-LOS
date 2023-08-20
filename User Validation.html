@@ -51,7 +51,7 @@
     </style>
 </head>
 <body>
-    <Body background="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Street Map.jpeg">  
+    <body background="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Street Map.jpeg">  
     <h1>Verifying Your Information</h1><br />
     <p id="conc_names"></p><br />
 
@@ -65,14 +65,20 @@
  <br />
  <br />
  <!--I'm a car guy-->
- <audio controls>
-    <source src="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Race Cars Formula 12 Cars - QuickSounds.com.mp3" type="audio/mpeg">
+ <audio controls><!--audio source: https://quicksounds.com/sound/20618/race-cars-formula-12-cars-->
+    <source src="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\Race Cars Formula 12 Cars - QuickSounds.com.mp3" type="audio/mpeg"/>
 </audio><br>
  <!--dream build, unless I win the lotto and its a cayman 718 for me!-->
- <img id="subie" src="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\rally car.jpg"/>
- <img id="cayman" src="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\718.jpg"/>
+ <img id="subie" src="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\rally car.jpg"/><!--image source: https://www.google.com/search?sca_esv=557663387&rlz=1C1CHBF_enUS1051US1051&sxsrf=AB5stBhtQH4fKztX6ht4R9452UQ5exIvuw:1692238834224&q=2021+subaru+rally+car&tbm=isch&source=lnms&sa=X&ved=2ahUKEwif5dr00OKAAxUElGoFHa8rAF0Q0pQJegQIDBAB&biw=1500&bih=843&dpr=2#imgrc=YOr4-PWe28q3RM-->
+ <img id="cayman" src="C:\Users\Los29\OneDrive\Desktop\CSC102\VCS\718.jpg"/><!--image source: https://s1.cdn.autoevolution.com/images/news/realistic-porsche-cayman-gt4-rs-render-166792_1.jpg-->
  <br>
- 
+ <button id="back to main page" onclick="openCloseWindow()"> Return to Main Page </button>
+    <script>
+        function openCloseWindow(){
+            window.open("C:/Users/Los29/OneDrive/Desktop/CSC102/VCS/Navigation and Table.html");
+            window.close();
+        }
+    </script>
   
   
 </body>
